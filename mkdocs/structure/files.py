@@ -138,7 +138,7 @@ class File:
         """ Return the name of the file without it's extension. """
         filename = os.path.basename(self.src_path)
         stem, ext = os.path.splitext(filename)
-        return 'index' if stem in ('index', 'README') else stem
+        return 'index' if stem in ('index', 'README', 'Home') else stem
 
     def _get_dest_path(self, use_directory_urls):
         """ Return destination path based on source path. """
@@ -215,7 +215,7 @@ class File:
 def get_files(config):
     """ Walk the `docs_dir` and return a Files collection. """
     files = []
-    exclude = ['.*', '/templates']
+    exclude = ['.*', '/templates', 'mkdocs.yml']
 
     for source_dir, dirnames, filenames in os.walk(config['docs_dir'], followlinks=True):
         relative_dir = os.path.relpath(source_dir, config['docs_dir'])
@@ -247,9 +247,9 @@ def _sort_files(filenames):
     def compare(x, y):
         if x == y:
             return 0
-        if os.path.splitext(y)[0] in ['index', 'README']:
+        if os.path.splitext(y)[0] in ['index', 'README', 'Home']:
             return 1
-        if os.path.splitext(x)[0] in ['index', 'README'] or x < y:
+        if os.path.splitext(x)[0] in ['index', 'README', 'Home'] or x < y:
             return -1
         return 1
 

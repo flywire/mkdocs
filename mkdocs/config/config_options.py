@@ -367,7 +367,7 @@ class Dir(FilesystemObject):
     def post_validation(self, config, key_name):
         if config.config_file_path is None:
             return
-
+        return
         # Validate that the dir is not the parent dir of the config file.
         if os.path.dirname(config.config_file_path) == config[key_name]:
             raise ValidationError(
