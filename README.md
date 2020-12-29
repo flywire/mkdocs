@@ -1,36 +1,5 @@
-# MkDocs
+**Note:** This is a tweaked version of MkDocs so you must choose which version to run.
 
-Project documentation with Markdown.
+A python virtual environment is suggested for your wiki project - see https://github.com/flywire/mkdocs/wiki/Development
 
----
-
-[![PyPI Version][pypi-v-image]][pypi-v-link]
-[![Build Status][GHAction-image]][GHAction-link]
-[![Coverage Status][codecov-image]][codecov-link]
-[![Landscale Code Health][landscape-image]][landscape-link]
-
-- View the [MkDocs documentation][mkdocs].
-- Project [release notes][release-notes].
-- Visit the [MkDocs wiki](https://github.com/mkdocs/mkdocs/wiki) for community
-  resources, including third party themes and a list of MkDocs users.
-- IRC channel: `#mkdocs` on freenode.
-- Discussions and support: <https://groups.google.com/forum/#!forum/mkdocs>
-
-## Code of Conduct
-
-Everyone interacting in the MkDocs project's codebases, issue trackers, chat
-rooms, and mailing lists is expected to follow the [PyPA Code of Conduct].
-
-[codecov-image]: https://codecov.io/github/mkdocs/mkdocs/coverage.svg?branch=master
-[codecov-link]: https://codecov.io/github/mkdocs/mkdocs?branch=master
-[landscape-image]: https://landscape.io/github/mkdocs/mkdocs/master/landscape.svg?style=flat
-[landscape-link]: https://landscape.io/github/mkdocs/mkdocs/master
-[pypi-v-image]: https://img.shields.io/pypi/v/mkdocs.svg
-[pypi-v-link]: https://pypi.org/project/mkdocs/
-[GHAction-image]: https://github.com/mkdocs/mkdocs/workflows/CI/badge.svg?branch=master&event=push
-[GHAction-link]: https://github.com/mkdocs/mkdocs/actions?query=event%3Apush+branch%3Amaster
-
-[mkdocs]: https://www.mkdocs.org
-[release-notes]: https://www.mkdocs.org/about/release-notes/
-
-[PyPA Code of Conduct]: https://www.pypa.io/en/latest/code-of-conduct/
+Background: https://github.com/mkdocs/mkdocs/issues/1437#issuecomment-748416079
